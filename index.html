@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>ИСКРИ</title>
+<style>
+/* Jost ExtraLight, subset to И С К Р. SIL OFL 1.1, see OFL.txt */
+@font-face {
+  font-family: Jost;
+  font-weight: 200;
+  font-display: block;
+  src: url("data:font/woff2;base64,d09GMgABAAAAAANUAA8AAAAABpAAAAL8AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGhYbdhwwBmA/U1RBVEQARBEICoIoggABNgIkAxQLDAAEIAWEAAcgG1kFyJ6HsRuiUk9Ly8XixyCIagzdu78gYoFRApCwHc82qkQqgKqpQk/wy9u9uU/PdOEJwnRkXgrNnVviv277fieQUEKJlgaFNxN45lGgCSZexo6jD51L72g6wGjh0dCi7XBrHX6UN/CLPVi1R4o06OMD8nSbKZFPkdDhEeGxw0Oio3xAQDgAUEIYISBUvlo6D57eQu7YRi7kGMB7BMi+C11IAAHCKBDBVDoDhao5CgA/DIBwlGOEUkLlmUKXq+TKKxsqFlRzseo5AABgVctvAqCXrgVYYINlZSHxqEzl0r4+hKeWbDlW+f862CRHAQQgrz4EsikhgimIpyCfnnt04oB9XbC5dISJJgAZeAs4QpMBgABQ4EA8R0A8Uw2CBVPYaKmW4/0A2V/x58uf/4QAABDye6KACAAQCoLBUsBhAIABAEcpaWYWaPG5R1uH6ltSVnV0bGFbLCwgYueu9O49ZUhy2M0pzk2GhlILZmbk/PS0oA3nWZnE1FSJPEY3JhXn3JSKvC65zYpT8B1u3IutG47Nms1+7xPG/slmxfMw+2FFw9xdHA6wlTlw3xtyHs6eXqk/3a4lz7c/1dNb0lzzhs2ttfW2b88PXC38+d/V5avnlpb7e/fLhvYULzr6XFrHz19YvJgUUjaad+azofKHPcXwQWpX/65Y/A/AMRxw94sP+/Mnt0S1fwt27jPAxPmc4wDwblv5CgCf7ybcUyCQAhB82C0AavogdFVAvoJ+rKkGVla+/cUDqggI0CcGQNCuMDdwpIUAd2GzItNdVkV6yzq1pnsNswFSE8wEykxulUB4uol1xGchm054tp6WQWgOssPj+4AMGh2pq1W9/GwrHVTE83kYmrQU8pgUUvN7vNgknQcxdcXx1yE+ZkOVKnsYiO6FaGoHj2NmH5dMwRD0QkIMIpti4pAPPsUstXeQHw54D6SC04tvv6bQvLAJ0KJKTWpUa7MPGWqLSk/g/ULEGDyuOmknAh6s0Rz5R+iEdii5fvtnAlcYAP4WtRQA") format("woff2");
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background: #fff;
+  color: #000;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #000;
+    color: #fff;
+  }
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  /* The wordmark's width in em, without the space letter-spacing adds
+     after the last letter. See README.md for how to measure it. */
+  --wordmark-width: 3.598;
+  /* A width in em does not depend on the font, so the box stays in place
+     while Jost loads. The trailing letter-spacing overflows the box, which
+     keeps the letters themselves centered. */
+  width: calc(var(--wordmark-width) * 1em);
+  margin: 0;
+  white-space: nowrap;
+  font-family: Jost, sans-serif;
+  font-weight: 200;
+  /* 70% of the screen width, with the font size capped at 10rem */
+  font-size: min(70vw / var(--wordmark-width), 10rem);
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+</style>
+</head>
+<body>
+<h1>ИСКРИ</h1>
+</body>
+</html>
