@@ -12,9 +12,8 @@ fallback font. The `h1` has a fixed width in em, so it does not move
 when the font is ready. Jost uses the SIL Open Font License 1.1. See
 `OFL.txt`.
 
-To change the wordmark, put the new text in `<title>` and `<h1>`. Then
-rebuild the subset from the variable Jost font, with the new text in
-`--text`:
+To change the wordmark, put the new text in `<h1>`. Then rebuild the
+subset from the variable Jost font, with the new text in `--text`:
 
 ```sh
 curl -fLo 'Jost[wght].ttf' \
